@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ------------------header style--------------------------- */
+nav {
+  width: 90%;
+  max-width: 1440px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding-right: 20px;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+}
+header nav h1 {
+  color: #3a3a3a;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* --------------------------influencer section------------------------------- */
+.influencer-section {
+  width: 90%;
+  max-width: 1440px;
+  margin: 40px auto;
+}
+
+.influencer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.influencer-description {
+  width: 50%;
+}
+.influencer-description h1 {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+}
+.influencer-description p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 20px 50px 20px 0;
+}
+.influencer-description button {
+  border-radius: 41px;
+  background: #e02c6ece;
+  padding: 10px 24px;
+  align-items: flex-start;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 1s;
+}
+.influencer-description button:hover {
+  background: #ff005d;
+}
+
+.influencer-image {
+  width: 50%;
+  text-align: right;
+  border: 2px solid #f1e4ff;
+  border-radius: 50%;
+  height: 450px;
+  width: 450px;
+  position: relative;
+  margin-top: 50px;
+}
+.influencer-image-bg {
+  background: #f1e4ff;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.influencer-image-only {
+  top: 20px;
+  right: 10px;
+  position: absolute;
+  z-index: 1;
+}
+/*  -------------------responsive style ------------------------ */
+
+/* header style */
+
+@media screen and (max-width: 576px) {
+  nav {
+    margin: 40px auto;
+    flex-direction: column;
+  }
+
+  .influencer-container {
+    flex-direction: column-reverse;
+  }
+  .influencer-description {
+    width: 100%;
+    text-align: center;
+  }
+}
