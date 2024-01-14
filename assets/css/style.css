@@ -5,7 +5,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+/* common css start */
+.influencer-section,
+.popular-section,
+.product-section {
+  width: 90%;
+  max-width: 1440px;
+  margin: 40px auto;
+}
+/* common css end */
 /* ------------------header style--------------------------- */
 nav {
   width: 90%;
@@ -33,11 +41,6 @@ header nav h1 {
 }
 
 /* --------------------------influencer section------------------------------- */
-.influencer-section {
-  width: 90%;
-  max-width: 1440px;
-  margin: 40px auto;
-}
 
 .influencer-container {
   display: flex;
@@ -125,12 +128,7 @@ header nav h1 {
 }
 
 /* popular collection section */
-.popular-section,
-.product-section {
-  width: 90%;
-  max-width: 1440px;
-  margin: 40px auto;
-}
+
 .popular-heading {
   text-align: center;
   padding: 20px 0;
